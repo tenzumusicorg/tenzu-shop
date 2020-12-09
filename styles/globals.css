@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Din;
+  src: url(../public/fonts/din.eot) format("eot"), url(../public/fonts/din.woff) format("woff"), url(../public/fonts/din.woff2) format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Din-bold;
+  src: url(../public/fonts/din-bold.eot) format("eot"), url(../public/fonts/din-bold.woff) format("woff"),
+    url(../public/fonts/din-bold.woff2) format("woff2");
+  font-weight: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Din;
+}
