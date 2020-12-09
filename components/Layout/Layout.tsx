@@ -1,5 +1,5 @@
-// import Header from '../Header/Header';
-// import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const Layout = ({children}) => {
 
@@ -9,9 +9,9 @@ const Layout = ({children}) => {
             padding: "35px",
             minHeight: "100vh"
         }}>
-            {/* <Header /> */}
+            <Header />
             {children}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
