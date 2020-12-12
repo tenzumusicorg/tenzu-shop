@@ -1,0 +1,49 @@
+.bar1 {
+  height: 0;
+  width: 37px;
+  border-top: 5px solid black;
+  border-right: 5px solid transparent;
+  margin-bottom: 5px;
+  transition: all ease-in-out 1s;
+}
+
+.bar2 {
+  height: 0;
+  width: 37px;
+  border-top: 5px solid black;
+  margin-bottom: 5px;
+  transition: all ease-in-out 1s;
+}
+
+.bar3 {
+  height: 0;
+  width: 37px;
+  border-bottom: 5px solid black;
+  border-left: 5px solid transparent;
+  transition: all ease-in-out 1s;
+}
+
+.bar1Open {
+  height: 0;
+  width: 80%;
+  border-top: 5px solid black;
+  border-right: 5px solid transparent;
+  margin-bottom: 5px;
+  transition: all ease-in-out 1s;
+}
+
+.bar2Open {
+  height: 0;
+  width: 80%;
+  border-top: 5px solid black;
+  margin-bottom: 5px;
+  transition: all ease-in-out 1s;
+}
+
+.bar3Open {
+  height: 0;
+  width: 80%;
+  border-bottom: 5px solid black;
+  border-left: 5px solid transparent;
+  transition: all ease-in-out 1s;
+}

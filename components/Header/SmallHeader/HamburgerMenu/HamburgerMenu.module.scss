@@ -1,0 +1,57 @@
+.openContainer1 {
+  transform: translateY(-300%);
+  animation: opening 0.5s normal forwards 0s;
+}
+
+@keyframes opening {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.closeContiner1 {
+  transform: translateY(0);
+  animation: closing 0.5s normal forwards 0.5s;
+}
+
+@keyframes closing {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300%);
+  }
+}
+
+///////////////////////////////////////////////////////////
+
+.openContainer2 {
+  transform: translateY(-300%);
+  animation: opening2 0.5s normal forwards 0.5s;
+}
+
+@keyframes opening2 {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.closeContiner2 {
+  transform: translateY(0);
+  animation: closing2 0.5s normal forwards 0s;
+}
+
+@keyframes closing2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300%);
+  }
+}

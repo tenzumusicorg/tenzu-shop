@@ -4,8 +4,9 @@ import LargeHeader from "./LargeHeader/LargeHeader";
 const Header = () => {
 
   return (
-    <header>
-        <SmallHeader />
+    <header className="fixed top-29 left-29 right-29">
+        <LargeHeader className="hidden md:block" />
+        <SmallHeader className="md:hidden" />
     </header>
   );
 };
