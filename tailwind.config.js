@@ -2,12 +2,12 @@ module.exports = {
   purge: ["./pages/**/*.js", "./components/**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    screen: {
-      xs: "300px",
-      sm: "600px",
-      md: "900px",
-      lg: "1280px",
-      xl: "1920px",
+    screens: {
+      sm: "330px",
+      md: "600px",
+      lg: "900px",
+      xl: "1280px",
+      '2xl': "1920px",
     },
     color: {
       black: "#000000",
@@ -30,9 +30,12 @@ module.exports = {
         1: "1px",
         2: "2px",
         3: "3px",
+        4: "4px",
         5: "5px",
+        6: "6px",
         7: "7px",
         8: "8px",
+        9: "9px",
         10: "10px",
         11: "11px",
         12: "12px",
@@ -52,11 +55,15 @@ module.exports = {
         35: "35px",
         40: "40px",
         42: "42px",
+        44: "44px",
         45: "45px",
         50: "50px",
+        52: "52px",
+        55: "55px",
         60: "60px",
         70: "70px",
         72: "72px",
+        74: "74px",
         80: "80px",
         81: "81px",
         90: "90px",
@@ -64,10 +71,13 @@ module.exports = {
         100: "100px",
         101: "101px",
         111: "111px",
+        120: "120px",
         131: "131px",
         136: "136px",
         138: "138px",
+        165: "165px",
         191: "191px",
+        360: "360px",
       },
     },
     borderWidth: {
@@ -81,12 +91,16 @@ module.exports = {
     },
     letterSpacing: {
       banner: "1.8vw",
-      hamburBanner: "5vw",
+      hamburBanner: "4vw",
+      smallHamBanner: "3vw",
+      large: "5vw"
     },
     fontSize: {
       12: "12px",
+      18: "18px",
       20: "20px",
       24: "24px",
+      27: "27px",
     },
     fontFamily: {
       'DinBold': ['Din-bold']

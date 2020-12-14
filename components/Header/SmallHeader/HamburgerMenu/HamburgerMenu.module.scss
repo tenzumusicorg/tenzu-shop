@@ -1,6 +1,6 @@
 .openContainer1 {
   transform: translateY(-300%);
-  animation: opening 0.5s normal forwards 0s;
+  animation: opening 1s normal forwards 0s;
 }
 
 @keyframes opening {
@@ -14,7 +14,7 @@
 
 .closeContiner1 {
   transform: translateY(0);
-  animation: closing 0.5s normal forwards 0.5s;
+  animation: closing 1s normal forwards 0.5s;
 }
 
 @keyframes closing {
@@ -30,7 +30,7 @@
 
 .openContainer2 {
   transform: translateY(-300%);
-  animation: opening2 0.5s normal forwards 0.5s;
+  animation: opening2 1s normal forwards 0.5s;
 }
 
 @keyframes opening2 {
@@ -44,7 +44,7 @@
 
 .closeContiner2 {
   transform: translateY(0);
-  animation: closing2 0.5s normal forwards 0s;
+  animation: closing2 1.3s normal forwards 0s;
 }
 
 @keyframes closing2 {

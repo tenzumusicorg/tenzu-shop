@@ -1,0 +1,27 @@
+.openIcons {
+  width: 75%;
+  display: flex;
+  transition: all 1s;
+}
+
+.closeIcons {
+  width: 0%;
+  display: flex;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+//////////////////////////////////
+
+.openInputBar {
+  display: flex;
+  width: 75%;
+  transition: all 1s;
+}
+
+.closeInputBar {
+  display: flex;
+  width: 0%;
+  overflow: hidden;
+  transition: all 1s;
+}

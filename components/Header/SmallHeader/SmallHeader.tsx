@@ -15,7 +15,7 @@ const SmallHeader = ({ className }: Props) => {
   return (
     <div className={className}>
       <div className="z-10">
-        <HorizontalLine />
+        <HorizontalLine className="" />
         <div className="w-full flex h-50">
           <div className="bg-white w-101 h-50 px-10 py-7 flex justify-center items-center border-r-2 border-black">
             <TenzuLogo />
@@ -24,7 +24,7 @@ const SmallHeader = ({ className }: Props) => {
             <Hamburger onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} />
           </div>
         </div>
-        <HorizontalLine />
+        <HorizontalLine className="" />
       </div>
       <div className="overflow-y-hidden">
         <HamburgerMenu isOpen={isOpen} />

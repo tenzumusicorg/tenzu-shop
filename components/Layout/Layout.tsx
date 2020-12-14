@@ -7,12 +7,11 @@ const Layout = ({ children }) => {
       <div className="w-full h-29 bg-black fixed top-0"></div>
       <Header />
       <div>
-        <div className="overflow-y-scroll h-300 bg-blue-600">
+        <div className="overflow-y-scroll">
           {children}
           <Footer />
         </div>
       </div>
-      <div className="w-full h-29 bg-black fixed bottom-0"></div>
     </div>
   );
 };

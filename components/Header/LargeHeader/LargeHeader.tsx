@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faShoppingCart, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "./Navabar/Navbar";
 import HorizontalLine from "../../HorizontalLine/HorizontalLine";
@@ -12,66 +11,84 @@ import ChartLogo from "../../Logos/ChartLogo";
 import LabelLogo from "../../Logos/LabelLogo";
 
 type Props = {
-  className: string,
-}
+  className: string;
+};
 
-const LargeHeader = ({className}: Props) => {
+const LargeHeader = ({ className }: Props) => {
   return (
     <div className={className}>
-      <HorizontalLine />
+      <HorizontalLine className="" />
       <div className="w-full bg-white flex">
         <div className="flex-grow">
-          <div className="flex border-b border-black">
-            <div title="Tenzu Music" className="w-136 h-72 p-14 border-r-2 border-black">
+          <div className="flex border-b-2 2xl:border-b-3 border-black">
+            <div title="Tenzu Music" className="w-136 2xl:w-191 h-72 2xl:h-101 p-14 border-r-2 2xl:border-r-3 border-black">
               <TenzuLogo />
             </div>
-            <div className="flex-grow border-r hidden md:flex border-black letter tracking-banner text-center font-bold justify-center items-center">
-              TENZU SHOP
+            <div className="flex-grow border-r-2 2xl:border-r-3 border-black font-bold flex justify-center items-center">
+              <span className="lg:tracking-banner 2xl:tracking-large text-center 2xl:text-27">TENZU SHOP</span>
             </div>
-            <div className="w-81 h-70 px-23 py-21 border-r border-black">
+            <div className="w-60 2xl:w-81 h-72 2xl:h-101 p-17 2xl:p-23 flex justify-center items-center border-r-2 2xl:border-r-3 border-black">
               <ToccataLogo />
             </div>
-            <div className="w-81 h-70 px-23 py-21 border-r border-black">
+            <div className="w-60 2xl:w-81 h-72 2xl:h-101 p-17 2xl:p-23 flex justify-center items-center border-r-2 2xl:border-r-3 border-black">
               <StudioLogo />
             </div>
-            <div className="w-81 h-70 px-23 py-21 border-r border-black">
+            <div className="w-60 2xl:w-81 h-72 2xl:h-101 p-17 2xl:p-23 flex justify-center items-center border-r-2 2xl:border-r-3 border-black">
               <ShopLogo />
             </div>
-            <div className="w-81 h-70 px-23 py-21 border-r border-black">
+            <div className="w-60 2xl:w-81 h-72 2xl:h-101 p-17 2xl:p-23 flex justify-center items-center border-r-2 2xl:border-r-3 border-black">
               <ChartLogo />
             </div>
-            <div className="w-81 h-70 px-23 py-21 border-r border-black">
+            <div className="w-60 2xl:w-81 h-72 2xl:h-101 p-17 2xl:p-23 flex justify-center items-center border-r-2 2xl:border-r-3 border-black">
               <LabelLogo />
             </div>
           </div>
-          <div className="w-full h-35 flex">
-            <div className="flex">
-              <div className="flex justify-center items-center text-center">EN</div>
-              <div className="flex justify-center items-center">
-                <FontAwesomeIcon className="mx-2 cursor-pointer" icon={faUser} size="lg" />
+          <div className="w-full h-27 2xl:h-35 flex">
+            <div className="hidden lg:flex flex-grow">
+              <div className="flex w-55 2xl:w-74 justify-center items-center text-center border-r-2 border-black text-20 font-DinBold">EN</div>
+              <div className="w-27 2xl:w-35 p-3 2xl:p-6 border-r-2 border-black">
+                <FontAwesomeIcon className="cursor-pointer" icon={faUser} size="lg" />
               </div>
-              <div className="flex justify-center items-center bg-red-300">
-                <FontAwesomeIcon className="mx-2 cursor-pointer" icon={faShoppingCart} size="lg" />
+              <div className="w-27 2xl:w-35 p-3 2xl:p-6 border-r-2 border-black">
+                <FontAwesomeIcon className="cursor-pointer" icon={faShoppingCart} size="lg" />
               </div>
+              <div className="w-27 2xl:w-35 p-3 2xl:p-6 border-r-2 border-black">
+                <FontAwesomeIcon className="cursor-pointer" icon={faSearch} size="lg" />
+              </div>
+              <form className="h-full flex-grow border-r-2 border-black">
+                <input className="w-full h-full pl-5" type="search" name="" placeholder="search some" id="search_input" />
+              </form>
             </div>
-            <div className="bg-red-500 flex-grow">
-              <input type="search" name="" placeholder="search some shit" id="" />
-            </div>
-            <div className="flex-grow border-r border-black"></div>
-            <div className="flex">
-              <div className="w-100 border-r border-black flex justify-center items-center">SERVICES</div>
-              <div className="w-100 border-r border-black flex justify-center items-center">BLOG</div>
-              <div className="w-100 border-r border-black flex justify-center items-center">CONTACT US</div>
+            <div className="flex md:w-full lg:w-360 2xl:w-auto">
+              <div className="w-1/3 lg:w-120 2xl:w-165 2xl:text-20 border-r-2 2xl:border-r-3 border-black flex justify-center items-center">SERVICES</div>
+              <div className="w-1/3 lg:w-120 2xl:w-165 2xl:text-20 border-r-2 2xl:border-r-3 border-black flex justify-center items-center">BLOG</div>
+              <div className="w-1/3 lg:w-120 2xl:w-165 2xl:text-20 border-r-2 2xl:border-r-3 border-black flex justify-center items-center">CONTACT US</div>
             </div>
           </div>
         </div>
-        <div className="w-111 h-138 px-27 py-12">
+        <div className="w-60 2xl:w-111 h-44 2xl:h-138 p-9 2xl:p-30 flex justify-center items-center">
           <ShopLogo />
         </div>
       </div>
-      <HorizontalLine />
+      <HorizontalLine className="lg:hidden" />
+      <div className="flex w-full bg-white lg:hidden">
+        <div className="flex w-55 justify-center items-center text-center border-r-2 border-black text-20 font-DinBold">EN</div>
+        <div className="w-27 p-3 border-r-2 2xl:border-r-3 border-black">
+          <FontAwesomeIcon className="cursor-pointer" icon={faUser} size="lg" />
+        </div>
+        <div className="w-27 p-3 border-r-2 2xl:border-r-3 border-black">
+          <FontAwesomeIcon className="cursor-pointer" icon={faShoppingCart} size="lg" />
+        </div>
+        <div className="w-27 p-3 border-r-2 2xl:border-r-3 border-black">
+          <FontAwesomeIcon className="cursor-pointer" icon={faSearch} size="lg" />
+        </div>
+        <form className="h-full flex-grow pt-4">
+          <input className="w-full h-full pl-5" type="search" name="" placeholder="search some" id="search_input" />
+        </form>
+      </div>
+      <HorizontalLine className="" />
       <Navbar />
-      <HorizontalLine />
+      <HorizontalLine className="" />
     </div>
   );
 };
